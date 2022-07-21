@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_joystick_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:text="Press your joystick or keyboard\nfor key mapping"
+		android:textSize="14sp"
+        android:textColor="#222222" />
+
+    <LinearLayout
+        android:id="@+id/ll_joystick_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_joystick_explain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" >
+        
+	    <TextView
+	        android:id="@+id/tv_joystick_current"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:minWidth="110dp"
+	        android:text="Key A"
+	        android:textColor="#222222"
+	        android:textSize="18sp" />
+	    
+	    <TextView
+	        android:layout_width="20dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text=">"
+			android:textSize="18sp"
+	        android:textColor="#222222" />
+	    
+	    <TextView
+	        android:id="@+id/tv_joystick_mapped"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:minWidth="110dp"
+	        android:text="None"
+	        android:textColor="#222222"
+	        android:textSize="18sp" />
+
+    </LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_joystick_key"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/btn_joystick_prev"
+            style="?android:attr/buttonStyleSmall"
+	        android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Prev" />
+
+	    <LinearLayout
+	        android:layout_width="15dp"
+	        android:layout_height="match_parent" />
+	        
+        <Button
+            android:id="@+id/btn_joystick_next"
+            style="?android:attr/buttonStyleSmall"
+	        android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Next" />
+
+    </LinearLayout>
+
+</RelativeLayout>

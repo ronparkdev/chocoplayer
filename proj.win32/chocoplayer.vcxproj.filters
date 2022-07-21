@@ -1,0 +1,1391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CONTROL">
+      <UniqueIdentifier>{ee5f2959-6683-4354-92b8-f617b60a7a0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\DATA">
+      <UniqueIdentifier>{d6222474-e662-44fb-b632-d93ea7a5bd7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\DATA\GLB">
+      <UniqueIdentifier>{78cf9dc7-056f-4642-85aa-34ae9f3bd481}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\DATA\LDB">
+      <UniqueIdentifier>{5675a801-5d8e-4433-902c-02daccf3941e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\DATA\LMT">
+      <UniqueIdentifier>{18e03727-bc59-411e-8fe8-76f7dc2b158c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\DATA\LMU">
+      <UniqueIdentifier>{a38cc653-c1a5-4481-9715-535076253268}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\DATA\LSD">
+      <UniqueIdentifier>{2b3cd795-d48d-4e5e-95e2-e65fbdfe5550}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\COMMON">
+      <UniqueIdentifier>{43d83110-34a9-4484-8c7f-bdcecd735d98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SOUND">
+      <UniqueIdentifier>{8803dc10-fc52-420f-b8b0-fa773a437e5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\AD">
+      <UniqueIdentifier>{bfbaea6f-bac7-44db-8cf4-2ee1a5fbfb9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GRAPHIC">
+      <UniqueIdentifier>{d7e4740f-7eff-4c10-a3a5-36f068275e2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GRAPHIC\OBJECT">
+      <UniqueIdentifier>{f44a80f2-3e89-4a88-9eac-1d98265ce0c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SCENE">
+      <UniqueIdentifier>{81b7f610-5d1b-4129-b9bc-6eefc79ea06a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SCENE\MAP">
+      <UniqueIdentifier>{cb9da52e-5d00-4e37-b231-a9eb618bc48a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SCENE\GAMEOVER">
+      <UniqueIdentifier>{658f7188-c6e8-4e2f-a4f0-de42a40fa12c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SCENE\SAVE">
+      <UniqueIdentifier>{198edb60-80e1-4ec9-9d55-93764edb716c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SCENE\SHOP">
+      <UniqueIdentifier>{ebceef93-272b-4db6-93a3-bd90084a4dad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SCENE\MENU">
+      <UniqueIdentifier>{aee978f6-05fa-488b-a40f-68daa8afc94e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SCENE\BATTLE">
+      <UniqueIdentifier>{620ccd8c-2842-4335-9a32-f37e7be4a1be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SCENE\BATTLE\For2000">
+      <UniqueIdentifier>{a0ac62c0-2314-4a81-9230-9e148703b59c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SCENE\BATTLE\For2003">
+      <UniqueIdentifier>{288215fd-148c-4404-88b4-8d3767af0d77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SCENE\TITLE">
+      <UniqueIdentifier>{ac2f5209-22ce-4baa-93a3-1c0854ca5d5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\FILEIO">
+      <UniqueIdentifier>{77e95923-4308-462b-ae73-12b3bf2d5732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\FILEIO\MINIZIP">
+      <UniqueIdentifier>{05ffe10b-7a73-4175-9750-12269b92a287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\FILEIO\ZLIB">
+      <UniqueIdentifier>{2b7de00d-1dd0-4d56-b582-7f8ddfd3dac6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\FILEIO\MD5">
+      <UniqueIdentifier>{54e0e981-a173-4e4c-b9d0-4f29942cb641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\DATA\LSDCHK">
+      <UniqueIdentifier>{79d0efb3-627f-48b3-ab94-39feb9e1803e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\TRANSLATE">
+      <UniqueIdentifier>{d5f750f2-a6af-4a01-b6fc-e6a2d3308bd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\NETWORK">
+      <UniqueIdentifier>{9b0d4135-c20d-444d-bd3d-82d51d21d242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GRAPHIC\ANIMATION">
+      <UniqueIdentifier>{3bb2e873-891e-459a-b27f-47c7e35e1df9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SCENE\NAMEINPUT">
+      <UniqueIdentifier>{a3373034-c08c-46ae-b4e9-93b1a652bb64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\FILEIO\JSON">
+      <UniqueIdentifier>{1155fdc9-c6c2-4b76-903b-a2c32f9c875a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\EVENT">
+      <UniqueIdentifier>{87726485-ef5b-4823-93e9-112332304a1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SCENE\APPMAIN">
+      <UniqueIdentifier>{1ebdadaa-f56a-4495-b573-ea62671e2891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SCENE\APPVKEY">
+      <UniqueIdentifier>{f8dcf0b0-43a4-4d1d-9748-5cf419460e37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\MENU">
+      <UniqueIdentifier>{85d5f859-4881-4179-91ff-bb64bf52f793}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SCENE\APPJOY">
+      <UniqueIdentifier>{eb142295-2e9a-4c6d-8cfb-dd408792cc35}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CONTROL\CCLayerCTL.cpp">
+      <Filter>Classes\CONTROL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CONTROL\ctlMain.cpp">
+      <Filter>Classes\CONTROL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\ImageBuffer.cpp">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CONTROL\ctlButton.cpp">
+      <Filter>Classes\CONTROL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EVENT\EvtCodeSetting.cpp">
+      <Filter>Classes\EVENT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EVENT\EvtInfo.cpp">
+      <Filter>Classes\EVENT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EVENT\EvtMain.cpp">
+      <Filter>Classes\EVENT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EVENT\EvtDoEvent.cpp">
+      <Filter>Classes\EVENT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EVENT\EvtGraphic.cpp">
+      <Filter>Classes\EVENT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\GrpFont.cpp">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\GrpFontNode.cpp">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\GrpPicture.cpp">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\GrpPictureNode.cpp">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\GrpRTP.cpp">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\GrpMenu.cpp">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\SAVE\ScrSave.cpp">
+      <Filter>Classes\SCENE\SAVE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SOUND\SndMain.cpp">
+      <Filter>Classes\SOUND</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SOUND\SndForWin32.cpp">
+      <Filter>Classes\SOUND</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SOUND\SndForAndroid.cpp">
+      <Filter>Classes\SOUND</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\ImageBufferNode.cpp">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\GrpFontL.cpp">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\GrpTimer.cpp">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\GrpComTimer.cpp">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameMain.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MENU\ScrMenu.cpp">
+      <Filter>Classes\SCENE\MENU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MENU\ScrMenuItem.cpp">
+      <Filter>Classes\SCENE\MENU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MENU\ScrMenuSkill.cpp">
+      <Filter>Classes\SCENE\MENU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MENU\ScrMenuEquip.cpp">
+      <Filter>Classes\SCENE\MENU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MENU\ScrMenuUse.cpp">
+      <Filter>Classes\SCENE\MENU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MENU\ScrMenuState.cpp">
+      <Filter>Classes\SCENE\MENU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3.cpp">
+      <Filter>Classes\SCENE\BATTLE\For2003</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattleBattlerManager.cpp">
+      <Filter>Classes\SCENE\BATTLE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3BackGround.cpp">
+      <Filter>Classes\SCENE\BATTLE\For2003</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattleEffectValues.cpp">
+      <Filter>Classes\SCENE\BATTLE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattleStateManager.cpp">
+      <Filter>Classes\SCENE\BATTLE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattleHueManager.cpp">
+      <Filter>Classes\SCENE\BATTLE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\GAMEOVER\ScrGameover.cpp">
+      <Filter>Classes\SCENE\GAMEOVER</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3Direction.cpp">
+      <Filter>Classes\SCENE\BATTLE\For2003</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle0.cpp">
+      <Filter>Classes\SCENE\BATTLE\For2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle0EnemyNode.cpp">
+      <Filter>Classes\SCENE\BATTLE\For2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle0Menu.cpp">
+      <Filter>Classes\SCENE\BATTLE\For2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle0Action.cpp">
+      <Filter>Classes\SCENE\BATTLE\For2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle0Queue.cpp">
+      <Filter>Classes\SCENE\BATTLE\For2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3Do.cpp">
+      <Filter>Classes\SCENE\BATTLE\For2003</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle0Turn.cpp">
+      <Filter>Classes\SCENE\BATTLE\For2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle0Event.cpp">
+      <Filter>Classes\SCENE\BATTLE\For2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3EnemyNode.cpp">
+      <Filter>Classes\SCENE\BATTLE\For2003</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3Event.cpp">
+      <Filter>Classes\SCENE\BATTLE\For2003</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3Finish.cpp">
+      <Filter>Classes\SCENE\BATTLE\For2003</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3HeroNode.cpp">
+      <Filter>Classes\SCENE\BATTLE\For2003</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3Menu.cpp">
+      <Filter>Classes\SCENE\BATTLE\For2003</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3Turn.cpp">
+      <Filter>Classes\SCENE\BATTLE\For2003</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3WeaponNode.cpp">
+      <Filter>Classes\SCENE\BATTLE\For2003</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle0Finish.cpp">
+      <Filter>Classes\SCENE\BATTLE\For2000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DATA\LMT\LmtMgr.cpp">
+      <Filter>Classes\DATA\LMT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MENU\ScrMenuOrder.cpp">
+      <Filter>Classes\SCENE\MENU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MENU\ScrMenuQuit.cpp">
+      <Filter>Classes\SCENE\MENU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AD\AdForAndroid.cpp">
+      <Filter>Classes\AD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AD\AdForWin32.cpp">
+      <Filter>Classes\AD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AD\AdMain.cpp">
+      <Filter>Classes\AD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\SHOP\ScrShop.cpp">
+      <Filter>Classes\SCENE\SHOP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EVENT\EvtInn.cpp">
+      <Filter>Classes\EVENT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DATA\LSD\LsdCharacter.cpp">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DATA\LSD\LsdMapEventStack.cpp">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\minizip\ioapi.c">
+      <Filter>Classes\FILEIO\MINIZIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\minizip\mztools.c">
+      <Filter>Classes\FILEIO\MINIZIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\minizip\unzip.c">
+      <Filter>Classes\FILEIO\MINIZIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\minizip\zip.c">
+      <Filter>Classes\FILEIO\MINIZIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\adler32.c">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\compress.c">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\crc32.c">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\deflate.c">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\gzio.c">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\infback.c">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\inffast.c">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\inflate.c">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\inftrees.c">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\trees.c">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\uncompr.c">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\zutil.c">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegateMulti.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\COMMON\DebugingCode.cpp">
+      <Filter>Classes\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\COMMON\MgrCharacter.cpp">
+      <Filter>Classes\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\COMMON\MgrCharacterEquip.cpp">
+      <Filter>Classes\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\COMMON\MgrCharacterSkill.cpp">
+      <Filter>Classes\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\COMMON\MgrCharacterState.cpp">
+      <Filter>Classes\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\COMMON\MgrEquip.cpp">
+      <Filter>Classes\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\COMMON\MgrItem.cpp">
+      <Filter>Classes\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\COMMON\MgrSkill.cpp">
+      <Filter>Classes\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\COMMON\MgrState.cpp">
+      <Filter>Classes\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\COMMON\ScreenCommon.cpp">
+      <Filter>Classes\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\COMMON\GlobalLang.cpp">
+      <Filter>Classes\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DATA\StructDefine.cpp">
+      <Filter>Classes\DATA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DATA\StructLoaderMain.cpp">
+      <Filter>Classes\DATA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DATA\StructLoaderValues.cpp">
+      <Filter>Classes\DATA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DATA\SysTime.cpp">
+      <Filter>Classes\DATA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DATA\TString.cpp">
+      <Filter>Classes\DATA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpBatDam.cpp">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpBatNum.cpp">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpGaze.cpp">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpHandDown.cpp">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpHandLeft.cpp">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpMsgbox.cpp">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpNumber.cpp">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpSelection.cpp">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpSysDown.cpp">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpSysUp.cpp">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\ScreenLayer.cpp">
+      <Filter>Classes\SCENE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\ScreenLayerManager.cpp">
+      <Filter>Classes\SCENE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\ScreenLayerManagerAnimation.cpp">
+      <Filter>Classes\SCENE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\ScreenLayerManagerDebug.cpp">
+      <Filter>Classes\SCENE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\ScreenLayerManagerScene.cpp">
+      <Filter>Classes\SCENE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpFace.cpp">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\TITLE\ScrTitle.cpp">
+      <Filter>Classes\SCENE\TITLE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SOUND\SndForiOS.cpp">
+      <Filter>Classes\SOUND</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DATA\StrConv.cpp">
+      <Filter>Classes\DATA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\COMMON\GlobalLangFile.cpp">
+      <Filter>Classes\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\COMMON\GlobalLangInGame.cpp">
+      <Filter>Classes\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DATA\LSD\LsdBuffer.cpp">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DATA\LSD\LsdOldLoader.cpp">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DATA\LSD\StructControler.cpp">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\COMMON\GlobalLangFont.cpp">
+      <Filter>Classes\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\COMMON\MultiOutter.cpp">
+      <Filter>Classes\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\NAMEINPUT\ScrNameInput.cpp">
+      <Filter>Classes\SCENE\NAMEINPUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CONTROL\MultiJoystick.cpp">
+      <Filter>Classes\CONTROL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CONTROL\MultiJoystickForAndroid.cpp">
+      <Filter>Classes\CONTROL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\FileCTL.cpp">
+      <Filter>Classes\FILEIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\GraphicIO.cpp">
+      <Filter>Classes\FILEIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\GraphicIOBMP.cpp">
+      <Filter>Classes\FILEIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\GraphicIOPNG.cpp">
+      <Filter>Classes\FILEIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\GraphicIOXYZ.cpp">
+      <Filter>Classes\FILEIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\InfoFile.cpp">
+      <Filter>Classes\FILEIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\TFolderForAndroid.cpp">
+      <Filter>Classes\FILEIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\TFolderForWin32.cpp">
+      <Filter>Classes\FILEIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\UnzipCTL.cpp">
+      <Filter>Classes\FILEIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\UnzipFolder.cpp">
+      <Filter>Classes\FILEIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\COMMON\MgrSetting.cpp">
+      <Filter>Classes\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\md5\md5.cpp">
+      <Filter>Classes\FILEIO\MD5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\ConvWAV.cpp">
+      <Filter>Classes\FILEIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DATA\LSDCHK\LsdChkMain.cpp">
+      <Filter>Classes\DATA\LSDCHK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DATA\LSDCHK\LsdChkSystem.cpp">
+      <Filter>Classes\DATA\LSDCHK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DATA\LSDCHK\LsdChkScreen.cpp">
+      <Filter>Classes\DATA\LSDCHK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DATA\LSDCHK\LsdChkEvents.cpp">
+      <Filter>Classes\DATA\LSDCHK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMap.cpp">
+      <Filter>Classes\SCENE\MAP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapWalk.cpp">
+      <Filter>Classes\SCENE\MAP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapBackground.cpp">
+      <Filter>Classes\SCENE\MAP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapChipset.cpp">
+      <Filter>Classes\SCENE\MAP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapChipsetDraw.cpp">
+      <Filter>Classes\SCENE\MAP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapChipsetTile.cpp">
+      <Filter>Classes\SCENE\MAP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapEffect.cpp">
+      <Filter>Classes\SCENE\MAP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapEventDraw.cpp">
+      <Filter>Classes\SCENE\MAP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapEventMove.cpp">
+      <Filter>Classes\SCENE\MAP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapEventNode.cpp">
+      <Filter>Classes\SCENE\MAP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapEvents.cpp">
+      <Filter>Classes\SCENE\MAP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapProcEvents.cpp">
+      <Filter>Classes\SCENE\MAP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapPublic.cpp">
+      <Filter>Classes\SCENE\MAP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapRider.cpp">
+      <Filter>Classes\SCENE\MAP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TRANSLATE\TranslateMain.cpp">
+      <Filter>Classes\TRANSLATE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NETWORK\NetMain.cpp">
+      <Filter>Classes\NETWORK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\COMMON\MultiOutterForAndroid.cpp">
+      <Filter>Classes\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\COMMON\MultiOutterForiOS.cpp">
+      <Filter>Classes\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TRANSLATE\TranslateExtract.cpp">
+      <Filter>Classes\TRANSLATE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\TSecure.cpp">
+      <Filter>Classes\FILEIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\GrpAniBat.cpp">
+      <Filter>Classes\GRAPHIC\ANIMATION</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\GrpAniNode.cpp">
+      <Filter>Classes\GRAPHIC\ANIMATION</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\GrpAniOne.cpp">
+      <Filter>Classes\GRAPHIC\ANIMATION</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\GrpAniMap.cpp">
+      <Filter>Classes\GRAPHIC\ANIMATION</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppMultiTime.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DATA\ArrayList.cpp">
+      <Filter>Classes\DATA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapDebug.cpp">
+      <Filter>Classes\SCENE\MAP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapEventMoveable.cpp">
+      <Filter>Classes\SCENE\MAP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\MENU\ScrMenuTeleport.cpp">
+      <Filter>Classes\SCENE\MENU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\COMMON\MgrTeleport.cpp">
+      <Filter>Classes\COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\GrpShaderFont.cpp">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\GrpRTPUser.cpp">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NETWORK\NetUserIdentity.cpp">
+      <Filter>Classes\NETWORK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NETWORK\NetReport.cpp">
+      <Filter>Classes\NETWORK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NETWORK\Base64Helper.cpp">
+      <Filter>Classes\NETWORK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\lib_json\json_reader.cpp">
+      <Filter>Classes\FILEIO\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\lib_json\json_value.cpp">
+      <Filter>Classes\FILEIO\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FILEIO\lib_json\json_writer.cpp">
+      <Filter>Classes\FILEIO\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\APPMAIN\ScrAppMain.cpp">
+      <Filter>Classes\SCENE\APPMAIN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\APPMAIN\ScrAppMainListNode.cpp">
+      <Filter>Classes\SCENE\APPMAIN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\AppScaleTools.cpp">
+      <Filter>Classes\SCENE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\APPMAIN\ScrAppMainGameNode.cpp">
+      <Filter>Classes\SCENE\APPMAIN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\APPMAIN\ScrAppMainGameLoader.cpp">
+      <Filter>Classes\SCENE\APPMAIN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\APPMAIN\ScrAppMainGameNodeSetting.cpp">
+      <Filter>Classes\SCENE\APPMAIN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GRAPHIC\GrpShaderColor.cpp">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\APPVKEY\ScrAppVKey.cpp">
+      <Filter>Classes\SCENE\APPVKEY</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\APPVKEY\ScrAppVKeyNode.cpp">
+      <Filter>Classes\SCENE\APPVKEY</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\APPVKEY\ScrAppVKeyStore.cpp">
+      <Filter>Classes\SCENE\APPVKEY</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\APPVKEY\ScrAppVKeyOK.cpp">
+      <Filter>Classes\SCENE\APPVKEY</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MENU\MenuMain.cpp">
+      <Filter>Classes\MENU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MENU\MenuSetting.cpp">
+      <Filter>Classes\MENU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MENU\MenuFeedback.cpp">
+      <Filter>Classes\MENU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MENU\MenuGameDetail.cpp">
+      <Filter>Classes\MENU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MENU\MenuNotice.cpp">
+      <Filter>Classes\MENU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DATA\LMT\LmtMain.cpp">
+      <Filter>Classes\DATA\LMT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\APPJOY\ScrAppJoy.cpp">
+      <Filter>Classes\SCENE\APPJOY</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SCENE\ScreenLayerManagerTimer.cpp">
+      <Filter>Classes\SCENE</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CONTROL\CCLayerCTL.h">
+      <Filter>Classes\CONTROL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\GLB\GlbEqipment.h">
+      <Filter>Classes\DATA\GLB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\GLB\GlbEvent.h">
+      <Filter>Classes\DATA\GLB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\GLB\GlbMoveRoute.h">
+      <Filter>Classes\DATA\GLB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\GLB\GlbMusic.h">
+      <Filter>Classes\DATA\GLB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\GLB\GlbSkillLearning.h">
+      <Filter>Classes\DATA\GLB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\GLB\GlbSound.h">
+      <Filter>Classes\DATA\GLB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\GLB\GlbTestBattler.h">
+      <Filter>Classes\DATA\GLB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbAni.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbAniCell.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbAniFrame.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbAniTiming.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbAttribute.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbBattleAniData.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbBattleCmd.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbBattlerAni.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbBattlerAniExt.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbCharacter.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbCharacterParameter.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbChipset.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbCommonEvent.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbCondition.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbEnemy.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbEnemyAction.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbEnemyGroup.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbEnemyGroupEventCondition.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbEnemyGroupEventPage.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbEnemyGroupMember.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbItem.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbJob.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbMain.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbSkill.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbSwitch.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbSystem.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbTerrain.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbVariable.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbVoca.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LMT\LmtEnemysInfo.h">
+      <Filter>Classes\DATA\LMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LMT\LmtMain.h">
+      <Filter>Classes\DATA\LMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LMT\LmtMapInfo.h">
+      <Filter>Classes\DATA\LMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LMT\LmtMapsInfo.h">
+      <Filter>Classes\DATA\LMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LMU\LmuEvent.h">
+      <Filter>Classes\DATA\LMU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LMU\LmuEventPage.h">
+      <Filter>Classes\DATA\LMU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LMU\LmuEventTrigger.h">
+      <Filter>Classes\DATA\LMU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LMU\LmuMain.h">
+      <Filter>Classes\DATA\LMU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\ImageBuffer.h">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameMain.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CONTROL\ctlButton.h">
+      <Filter>Classes\CONTROL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EVENT\EvtCodes.h">
+      <Filter>Classes\EVENT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EVENT\EvtMain.h">
+      <Filter>Classes\EVENT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\GrpFont.h">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\GrpFontNode.h">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\GrpPicture.h">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\GrpPictureNode.h">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\GrpRTP.h">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\ImageType.h">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\GrpMenu.h">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\TITLE\ScrTitle.h">
+      <Filter>Classes\SCENE\TITLE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\SAVE\ScrSave.h">
+      <Filter>Classes\SCENE\SAVE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SOUND\SndMain.h">
+      <Filter>Classes\SOUND</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CONTROL\ctlMain.h">
+      <Filter>Classes\CONTROL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\GrpFontL.h">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\GrpTimer.h">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\GrpComTimer.h">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\MENU\ScrMenu.h">
+      <Filter>Classes\SCENE\MENU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\MENU\ScrMenuEquip.h">
+      <Filter>Classes\SCENE\MENU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\MENU\ScrMenuItem.h">
+      <Filter>Classes\SCENE\MENU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\MENU\ScrMenuSkill.h">
+      <Filter>Classes\SCENE\MENU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\MENU\ScrMenuUse.h">
+      <Filter>Classes\SCENE\MENU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\MENU\ScrMenuState.h">
+      <Filter>Classes\SCENE\MENU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattle3.h">
+      <Filter>Classes\SCENE\BATTLE\For2003</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattleType.h">
+      <Filter>Classes\SCENE\BATTLE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattleBattlerManager.h">
+      <Filter>Classes\SCENE\BATTLE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattle3ActionQueue.h">
+      <Filter>Classes\SCENE\BATTLE\For2003</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattleEffectValues.h">
+      <Filter>Classes\SCENE\BATTLE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattleStateManager.h">
+      <Filter>Classes\SCENE\BATTLE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattleHueManager.h">
+      <Filter>Classes\SCENE\BATTLE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\GAMEOVER\ScrGameover.h">
+      <Filter>Classes\SCENE\GAMEOVER</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattle0.h">
+      <Filter>Classes\SCENE\BATTLE\For2000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattle0EnemyNode.h">
+      <Filter>Classes\SCENE\BATTLE\For2000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattle0ActionQueue.h">
+      <Filter>Classes\SCENE\BATTLE\For2000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattle3WeaponNode.h">
+      <Filter>Classes\SCENE\BATTLE\For2003</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattle3EnemyNode.h">
+      <Filter>Classes\SCENE\BATTLE\For2003</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattle3HeroNode.h">
+      <Filter>Classes\SCENE\BATTLE\For2003</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LMT\LmtMgr.h">
+      <Filter>Classes\DATA\LMT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\MENU\ScrMenuOrder.h">
+      <Filter>Classes\SCENE\MENU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\MENU\ScrMenuQuit.h">
+      <Filter>Classes\SCENE\MENU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AD\AdMain.h">
+      <Filter>Classes\AD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\SHOP\ScrShop.h">
+      <Filter>Classes\SCENE\SHOP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LSD\LsdTeleport.h">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LSD\LsdCharacter.h">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LSD\LsdCommonEvent.h">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LSD\LsdLocationHero.h">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LSD\LsdLocationRide.h">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LSD\LsdMain.h">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LSD\LsdMap.h">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LSD\LsdMapEvent.h">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LSD\LsdMapEventData.h">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LSD\LsdMapEventStack.h">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LSD\LsdObjectCommon.h">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LSD\LsdPicture.h">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LSD\LsdPreview.h">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LSD\LsdScreen.h">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LSD\LsdState.h">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LSD\LsdSystem.h">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\crc32.h">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\deflate.h">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\inffast.h">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\inffixed.h">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\inflate.h">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\inftrees.h">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\trees.h">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\zconf.h">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\zconf.in.h">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\zlib.h">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\zutil.h">
+      <Filter>Classes\FILEIO\ZLIB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\COMMON\ComMgrCMD.h">
+      <Filter>Classes\COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\COMMON\DebugingCode.h">
+      <Filter>Classes\COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\COMMON\MgrCharacter.h">
+      <Filter>Classes\COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\COMMON\MgrEquip.h">
+      <Filter>Classes\COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\COMMON\MgrItem.h">
+      <Filter>Classes\COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\COMMON\MgrSkill.h">
+      <Filter>Classes\COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\COMMON\MgrState.h">
+      <Filter>Classes\COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\COMMON\ScreenCommon.h">
+      <Filter>Classes\COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\COMMON\ComMath.h">
+      <Filter>Classes\COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\COMMON\GlobalLang.h">
+      <Filter>Classes\COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\ArrayList.h">
+      <Filter>Classes\DATA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\ArrayList.hpp">
+      <Filter>Classes\DATA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\StrConv.h">
+      <Filter>Classes\DATA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\StructDefine.h">
+      <Filter>Classes\DATA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\StructDefine.hpp">
+      <Filter>Classes\DATA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\StructLoader.h">
+      <Filter>Classes\DATA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\SysTime.h">
+      <Filter>Classes\DATA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\TString.h">
+      <Filter>Classes\DATA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\TThread.h">
+      <Filter>Classes\DATA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpBatDam.h">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpBatNum.h">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpGaze.h">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpHandDown.h">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpHandLeft.h">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpMsgbox.h">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpNumber.h">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpSelection.h">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpSysDown.h">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpSysUp.h">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\ScreenLayer.h">
+      <Filter>Classes\SCENE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\ScreenLayerManager.h">
+      <Filter>Classes\SCENE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpFace.h">
+      <Filter>Classes\GRAPHIC\OBJECT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\COMMON\GlobalLangFile.h">
+      <Filter>Classes\COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\COMMON\GlobalLangInGame.h">
+      <Filter>Classes\COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LSD\LsdBuffer.h">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LSD\LsdOldLoader.h">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LSD\StructControler.h">
+      <Filter>Classes\DATA\LSD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\COMMON\GlobalLangFont.h">
+      <Filter>Classes\COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\COMMON\MultiOutter.h">
+      <Filter>Classes\COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\NAMEINPUT\ScrNameInput.h">
+      <Filter>Classes\SCENE\NAMEINPUT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CONTROL\MultiJoystick.h">
+      <Filter>Classes\CONTROL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CONTROL\MultiJoystickForAndroid.h">
+      <Filter>Classes\CONTROL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\UnzipFolder.h">
+      <Filter>Classes\FILEIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\FileCTL.h">
+      <Filter>Classes\FILEIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\FileType.h">
+      <Filter>Classes\FILEIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\GraphicIO.h">
+      <Filter>Classes\FILEIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\InfoFile.h">
+      <Filter>Classes\FILEIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\TFolder.h">
+      <Filter>Classes\FILEIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\UnzipCTL.h">
+      <Filter>Classes\FILEIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\COMMON\MgrSetting.h">
+      <Filter>Classes\COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\md5\md5.h">
+      <Filter>Classes\FILEIO\MD5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\ConvWAV.h">
+      <Filter>Classes\FILEIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LSDCHK\LsdChk.h">
+      <Filter>Classes\DATA\LSDCHK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ChocoPlayerInfo.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\MAP\ScrMap.h">
+      <Filter>Classes\SCENE\MAP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\MAP\ScrMapChipsetTile.h">
+      <Filter>Classes\SCENE\MAP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\MAP\ScrMapEventNode.h">
+      <Filter>Classes\SCENE\MAP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\MAP\ScrMapPublic.h">
+      <Filter>Classes\SCENE\MAP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TRANSLATE\TranslateMain.h">
+      <Filter>Classes\TRANSLATE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NETWORK\NetMain.h">
+      <Filter>Classes\NETWORK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\TSecure.h">
+      <Filter>Classes\FILEIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\GrpAniMap.h">
+      <Filter>Classes\GRAPHIC\ANIMATION</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\GrpAniOne.h">
+      <Filter>Classes\GRAPHIC\ANIMATION</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\GrpAniBat.h">
+      <Filter>Classes\GRAPHIC\ANIMATION</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\GrpAniNode.h">
+      <Filter>Classes\GRAPHIC\ANIMATION</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppMultiTime.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattleBgInfo.h">
+      <Filter>Classes\SCENE\BATTLE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbMainSimple.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DATA\LDB\LdbSystemSimple.h">
+      <Filter>Classes\DATA\LDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\MENU\ScrMenuTeleport.h">
+      <Filter>Classes\SCENE\MENU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\COMMON\MgrTeleport.h">
+      <Filter>Classes\COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\GrpShaderFont.h">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\GrpRTPUser.h">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\GrpRTPNode.h">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppMulti.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NETWORK\Base64Helper.h">
+      <Filter>Classes\NETWORK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\lib_json\autolink.h">
+      <Filter>Classes\FILEIO\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\lib_json\config.h">
+      <Filter>Classes\FILEIO\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\lib_json\features.h">
+      <Filter>Classes\FILEIO\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\lib_json\forwards.h">
+      <Filter>Classes\FILEIO\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\lib_json\json.h">
+      <Filter>Classes\FILEIO\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\lib_json\json_batchallocator.h">
+      <Filter>Classes\FILEIO\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\lib_json\reader.h">
+      <Filter>Classes\FILEIO\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\lib_json\value.h">
+      <Filter>Classes\FILEIO\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FILEIO\lib_json\writer.h">
+      <Filter>Classes\FILEIO\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\APPMAIN\ScrAppMain.h">
+      <Filter>Classes\SCENE\APPMAIN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\APPMAIN\ScrAppMainListNode.h">
+      <Filter>Classes\SCENE\APPMAIN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\AppScaleTools.h">
+      <Filter>Classes\SCENE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\APPMAIN\ScrAppMainGameNode.h">
+      <Filter>Classes\SCENE\APPMAIN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GRAPHIC\GrpShaderColor.h">
+      <Filter>Classes\GRAPHIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\APPVKEY\ScrAppVKey.h">
+      <Filter>Classes\SCENE\APPVKEY</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\APPVKEY\ScrAppVKeyNode.h">
+      <Filter>Classes\SCENE\APPVKEY</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\APPVKEY\ScrAppVKeyStore.h">
+      <Filter>Classes\SCENE\APPVKEY</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\APPVKEY\ScrAppVKeyOK.h">
+      <Filter>Classes\SCENE\APPVKEY</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MENU\MenuMain.h">
+      <Filter>Classes\MENU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SCENE\APPJOY\ScrAppJoy.h">
+      <Filter>Classes\SCENE\APPJOY</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Classes\COMMON\MultiOutter.mm">
+      <Filter>Classes\COMMON</Filter>
+    </None>
+    <None Include="..\Classes\FILEIO\lib_json\json_internalarray.inl">
+      <Filter>Classes\FILEIO\JSON</Filter>
+    </None>
+    <None Include="..\Classes\FILEIO\lib_json\json_internalmap.inl">
+      <Filter>Classes\FILEIO\JSON</Filter>
+    </None>
+    <None Include="..\Classes\FILEIO\lib_json\json_valueiterator.inl">
+      <Filter>Classes\FILEIO\JSON</Filter>
+    </None>
+    <None Include="..\Classes\FILEIO\lib_json\sconscript">
+      <Filter>Classes\FILEIO\JSON</Filter>
+    </None>
+  </ItemGroup>
+</Project>

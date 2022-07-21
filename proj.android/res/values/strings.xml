@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">chocoplayer</string>
+    <string name="Feedback_GamePath">Game Path (for send savefile)</string>
+    <string name="Feedback_Email">Email for contect</string>
+    <string name="Feedback_Detail">Detail situation</string>
+    <string name="Feedback_SendSuccess">Thank you for your feedback!!! \nI will contect you ASAP.</string>
+    <string name="Feedback_SendFail">Sorry, Log Server not respond, \nso you should send me with mail.</string>
+    <string name="Inapp_BuySuccess">Thank you for your purchase!!</string>
+    <string name="Inapp_BuyFail">Purchase is temporarily unavailable.\nPlease try again later.</string>
+    <string name="Inapp_BuyAlready">You already bought this.\n If not effect that, please contect me by email</string>
+    
+    <string name="Request_FontBug">Your phone model may print font incorrectly. \n If do you want to help us to fix the bug,  please contact us my email. \n chocolatlsweet@gmail.com</string>
+</resources>

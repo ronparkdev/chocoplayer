@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76A39BB2-9B84-4C65-98A5-654D86B86F2A}</ProjectGuid>
+    <RootNamespace>test_win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;C:\DevTools\pthread_for_win32\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\DevTools\pthread_for_win32\include;$(IncludePath)</IncludePath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\cocos2d-x-2.2.4\cocos2dx;$(ProjectDir)..\cocos2d-x-2.2.4\cocos2dx\include;$(ProjectDir)..\cocos2d-x-2.2.4\cocos2dx\kazmath\include;$(ProjectDir)..\cocos2d-x-2.2.4\cocos2dx\platform\win32;$(ProjectDir)..\cocos2d-x-2.2.4\cocos2dx\platform\third_party\win32;$(ProjectDir)..\cocos2d-x-2.2.4\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\cocos2d-x-2.2.4\cocos2dx\platform\third_party\win32\openssl;$(ProjectDir)..\cocos2d-x-2.2.4\CocosDenshion\include;$(ProjectDir)..\cocos2d-x-2.2.4\external;$(ProjectDir)..\cocos2d-x-2.2.4\external\chipmunk\include\chipmunk;$(ProjectDir)..\cocos2d-x-2.2.4\extensions;..\Classes\FILEIO\zlib_1.2.3;..\Classes\FILEIO\minizip;..\Classes;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libExtensions.lib;libcocos2d.lib;libCocosDenshion.lib;libchipmunk.lib;opengl32.lib;glew32.lib;libcurl_imp.lib;websockets.lib;ws2_32.lib;libeay32.lib;ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)..\cocos2d-x-2.2.4\external\libwebsockets\win32\lib\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\cocos2dx;$(ProjectDir)..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\..\external;$(ProjectDir)..\..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\..\CocosDenshion\include;$(ProjectDir)..\..\..\extensions;..\Classes;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libExtensions.lib;libcocos2d.lib;libCocosDenshion.lib;opengl32.lib;glew32.lib;libBox2d.lib;libchipmunk.lib;libcurl_imp.lib;pthreadVCE2.lib;websockets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AD\AdForAndroid.cpp" />
+    <ClCompile Include="..\Classes\AD\AdForWin32.cpp" />
+    <ClCompile Include="..\Classes\AD\AdMain.cpp" />
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\AppDelegateMulti.cpp" />
+    <ClCompile Include="..\Classes\AppMultiTime.cpp" />
+    <ClCompile Include="..\Classes\COMMON\DebugingCode.cpp" />
+    <ClCompile Include="..\Classes\COMMON\GlobalLang.cpp" />
+    <ClCompile Include="..\Classes\COMMON\GlobalLangFile.cpp" />
+    <ClCompile Include="..\Classes\COMMON\GlobalLangFont.cpp" />
+    <ClCompile Include="..\Classes\COMMON\GlobalLangInGame.cpp" />
+    <ClCompile Include="..\Classes\COMMON\MgrCharacter.cpp" />
+    <ClCompile Include="..\Classes\COMMON\MgrCharacterEquip.cpp" />
+    <ClCompile Include="..\Classes\COMMON\MgrCharacterSkill.cpp" />
+    <ClCompile Include="..\Classes\COMMON\MgrCharacterState.cpp" />
+    <ClCompile Include="..\Classes\COMMON\MgrEquip.cpp" />
+    <ClCompile Include="..\Classes\COMMON\MgrItem.cpp" />
+    <ClCompile Include="..\Classes\COMMON\MgrSetting.cpp" />
+    <ClCompile Include="..\Classes\COMMON\MgrSkill.cpp" />
+    <ClCompile Include="..\Classes\COMMON\MgrState.cpp" />
+    <ClCompile Include="..\Classes\COMMON\MgrTeleport.cpp" />
+    <ClCompile Include="..\Classes\COMMON\MultiOutter.cpp" />
+    <ClCompile Include="..\Classes\COMMON\MultiOutterForAndroid.cpp" />
+    <ClCompile Include="..\Classes\COMMON\MultiOutterForiOS.cpp" />
+    <ClCompile Include="..\Classes\COMMON\ScreenCommon.cpp" />
+    <ClCompile Include="..\Classes\CONTROL\CCLayerCTL.cpp" />
+    <ClCompile Include="..\Classes\CONTROL\ctlButton.cpp" />
+    <ClCompile Include="..\Classes\CONTROL\ctlMain.cpp" />
+    <ClCompile Include="..\Classes\CONTROL\MultiJoystick.cpp" />
+    <ClCompile Include="..\Classes\CONTROL\MultiJoystickForAndroid.cpp" />
+    <ClCompile Include="..\Classes\DATA\ArrayList.cpp" />
+    <ClCompile Include="..\Classes\DATA\LMT\LmtMain.cpp" />
+    <ClCompile Include="..\Classes\DATA\LMT\LmtMgr.cpp" />
+    <ClCompile Include="..\Classes\DATA\LSDCHK\LsdChkEvents.cpp" />
+    <ClCompile Include="..\Classes\DATA\LSDCHK\LsdChkMain.cpp" />
+    <ClCompile Include="..\Classes\DATA\LSDCHK\LsdChkScreen.cpp" />
+    <ClCompile Include="..\Classes\DATA\LSDCHK\LsdChkSystem.cpp" />
+    <ClCompile Include="..\Classes\DATA\LSD\LsdBuffer.cpp" />
+    <ClCompile Include="..\Classes\DATA\LSD\LsdCharacter.cpp" />
+    <ClCompile Include="..\Classes\DATA\LSD\LsdMapEventStack.cpp" />
+    <ClCompile Include="..\Classes\DATA\LSD\LsdOldLoader.cpp" />
+    <ClCompile Include="..\Classes\DATA\LSD\StructControler.cpp" />
+    <ClCompile Include="..\Classes\DATA\StrConv.cpp" />
+    <ClCompile Include="..\Classes\DATA\StructDefine.cpp" />
+    <ClCompile Include="..\Classes\DATA\StructLoaderMain.cpp" />
+    <ClCompile Include="..\Classes\DATA\StructLoaderValues.cpp" />
+    <ClCompile Include="..\Classes\DATA\SysTime.cpp" />
+    <ClCompile Include="..\Classes\DATA\TString.cpp" />
+    <ClCompile Include="..\Classes\EVENT\EvtCodeSetting.cpp" />
+    <ClCompile Include="..\Classes\EVENT\EvtDoEvent.cpp" />
+    <ClCompile Include="..\Classes\EVENT\EvtGraphic.cpp" />
+    <ClCompile Include="..\Classes\EVENT\EvtInfo.cpp" />
+    <ClCompile Include="..\Classes\EVENT\EvtInn.cpp" />
+    <ClCompile Include="..\Classes\EVENT\EvtMain.cpp" />
+    <ClCompile Include="..\Classes\FILEIO\ConvWAV.cpp" />
+    <ClCompile Include="..\Classes\FILEIO\FileCTL.cpp" />
+    <ClCompile Include="..\Classes\FILEIO\GraphicIO.cpp" />
+    <ClCompile Include="..\Classes\FILEIO\GraphicIOBMP.cpp" />
+    <ClCompile Include="..\Classes\FILEIO\GraphicIOPNG.cpp" />
+    <ClCompile Include="..\Classes\FILEIO\GraphicIOXYZ.cpp" />
+    <ClCompile Include="..\Classes\FILEIO\InfoFile.cpp" />
+    <ClCompile Include="..\Classes\FILEIO\lib_json\json_reader.cpp" />
+    <ClCompile Include="..\Classes\FILEIO\lib_json\json_value.cpp" />
+    <ClCompile Include="..\Classes\FILEIO\lib_json\json_writer.cpp" />
+    <ClCompile Include="..\Classes\FILEIO\md5\md5.cpp" />
+    <ClCompile Include="..\Classes\FILEIO\minizip\ioapi.c" />
+    <ClCompile Include="..\Classes\FILEIO\minizip\mztools.c" />
+    <ClCompile Include="..\Classes\FILEIO\minizip\unzip.c" />
+    <ClCompile Include="..\Classes\FILEIO\minizip\zip.c" />
+    <ClCompile Include="..\Classes\FILEIO\TFolderForAndroid.cpp" />
+    <ClCompile Include="..\Classes\FILEIO\TFolderForWin32.cpp" />
+    <ClCompile Include="..\Classes\FILEIO\TSecure.cpp" />
+    <ClCompile Include="..\Classes\FILEIO\UnzipCTL.cpp" />
+    <ClCompile Include="..\Classes\FILEIO\UnzipFolder.cpp" />
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\adler32.c" />
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\compress.c" />
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\crc32.c" />
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\deflate.c" />
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\gzio.c" />
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\infback.c" />
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\inffast.c" />
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\inflate.c" />
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\inftrees.c" />
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\trees.c" />
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\uncompr.c" />
+    <ClCompile Include="..\Classes\FILEIO\zlib_1.2.3\zutil.c" />
+    <ClCompile Include="..\Classes\GameMain.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\GrpAniMap.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\GrpAniBat.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\GrpAniNode.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\GrpAniOne.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\GrpComTimer.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\GrpFont.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\GrpFontL.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\GrpFontNode.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\GrpMenu.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\GrpPicture.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\GrpPictureNode.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\GrpRTP.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\GrpRTPUser.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\GrpShaderColor.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\GrpShaderFont.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\GrpTimer.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\ImageBuffer.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\ImageBufferNode.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpBatDam.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpBatNum.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpFace.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpGaze.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpHandDown.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpHandLeft.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpMsgbox.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpNumber.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpSelection.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpSysDown.cpp" />
+    <ClCompile Include="..\Classes\GRAPHIC\OBJECT\GrpSysUp.cpp" />
+    <ClCompile Include="..\Classes\MENU\MenuFeedback.cpp" />
+    <ClCompile Include="..\Classes\MENU\MenuGameDetail.cpp" />
+    <ClCompile Include="..\Classes\MENU\MenuMain.cpp" />
+    <ClCompile Include="..\Classes\MENU\MenuNotice.cpp" />
+    <ClCompile Include="..\Classes\MENU\MenuSetting.cpp" />
+    <ClCompile Include="..\Classes\NETWORK\Base64Helper.cpp" />
+    <ClCompile Include="..\Classes\NETWORK\NetMain.cpp" />
+    <ClCompile Include="..\Classes\NETWORK\NetReport.cpp" />
+    <ClCompile Include="..\Classes\NETWORK\NetUserIdentity.cpp" />
+    <ClCompile Include="..\Classes\SCENE\APPJOY\ScrAppJoy.cpp" />
+    <ClCompile Include="..\Classes\SCENE\APPMAIN\ScrAppMain.cpp" />
+    <ClCompile Include="..\Classes\SCENE\APPMAIN\ScrAppMainGameLoader.cpp" />
+    <ClCompile Include="..\Classes\SCENE\APPMAIN\ScrAppMainGameNode.cpp" />
+    <ClCompile Include="..\Classes\SCENE\APPMAIN\ScrAppMainGameNodeSetting.cpp" />
+    <ClCompile Include="..\Classes\SCENE\APPMAIN\ScrAppMainListNode.cpp" />
+    <ClCompile Include="..\Classes\SCENE\AppScaleTools.cpp" />
+    <ClCompile Include="..\Classes\SCENE\APPVKEY\ScrAppVKey.cpp" />
+    <ClCompile Include="..\Classes\SCENE\APPVKEY\ScrAppVKeyNode.cpp" />
+    <ClCompile Include="..\Classes\SCENE\APPVKEY\ScrAppVKeyOK.cpp" />
+    <ClCompile Include="..\Classes\SCENE\APPVKEY\ScrAppVKeyStore.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle0.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle0Action.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle0EnemyNode.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle0Event.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle0Finish.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle0Menu.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle0Queue.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle0Turn.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3BackGround.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3Direction.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3Do.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3EnemyNode.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3Event.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3Finish.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3HeroNode.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3WeaponNode.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattleHueManager.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3Menu.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattle3Turn.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattleBattlerManager.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattleEffectValues.cpp" />
+    <ClCompile Include="..\Classes\SCENE\BATTLE\ScrBattleStateManager.cpp" />
+    <ClCompile Include="..\Classes\SCENE\GAMEOVER\ScrGameover.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMap.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapBackground.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapChipset.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapChipsetDraw.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapChipsetTile.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapDebug.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapEffect.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapEventDraw.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapEventMove.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapEventNode.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapEvents.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapEventMoveable.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapProcEvents.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapPublic.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapRider.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MAP\ScrMapWalk.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MENU\ScrMenu.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MENU\ScrMenuEquip.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MENU\ScrMenuItem.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MENU\ScrMenuOrder.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MENU\ScrMenuQuit.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MENU\ScrMenuSkill.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MENU\ScrMenuState.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MENU\ScrMenuTeleport.cpp" />
+    <ClCompile Include="..\Classes\SCENE\MENU\ScrMenuUse.cpp" />
+    <ClCompile Include="..\Classes\SCENE\NAMEINPUT\ScrNameInput.cpp" />
+    <ClCompile Include="..\Classes\SCENE\SAVE\ScrSave.cpp" />
+    <ClCompile Include="..\Classes\SCENE\ScreenLayer.cpp" />
+    <ClCompile Include="..\Classes\SCENE\ScreenLayerManager.cpp" />
+    <ClCompile Include="..\Classes\SCENE\ScreenLayerManagerAnimation.cpp" />
+    <ClCompile Include="..\Classes\SCENE\ScreenLayerManagerDebug.cpp" />
+    <ClCompile Include="..\Classes\SCENE\ScreenLayerManagerScene.cpp" />
+    <ClCompile Include="..\Classes\SCENE\ScreenLayerManagerTimer.cpp" />
+    <ClCompile Include="..\Classes\SCENE\SHOP\ScrShop.cpp" />
+    <ClCompile Include="..\Classes\SCENE\TITLE\ScrTitle.cpp" />
+    <ClCompile Include="..\Classes\SOUND\SndForAndroid.cpp" />
+    <ClCompile Include="..\Classes\SOUND\SndForiOS.cpp" />
+    <ClCompile Include="..\Classes\SOUND\SndForWin32.cpp" />
+    <ClCompile Include="..\Classes\SOUND\SndMain.cpp" />
+    <ClCompile Include="..\Classes\TRANSLATE\TranslateExtract.cpp" />
+    <ClCompile Include="..\Classes\TRANSLATE\TranslateMain.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AD\AdMain.h" />
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\AppMulti.h" />
+    <ClInclude Include="..\Classes\AppMultiTime.h" />
+    <ClInclude Include="..\Classes\COMMON\ComMath.h" />
+    <ClInclude Include="..\Classes\COMMON\ComMgrCMD.h" />
+    <ClInclude Include="..\Classes\COMMON\DebugingCode.h" />
+    <ClInclude Include="..\Classes\COMMON\GlobalLang.h" />
+    <ClInclude Include="..\Classes\COMMON\GlobalLangFile.h" />
+    <ClInclude Include="..\Classes\COMMON\GlobalLangFont.h" />
+    <ClInclude Include="..\Classes\COMMON\GlobalLangInGame.h" />
+    <ClInclude Include="..\Classes\COMMON\MgrCharacter.h" />
+    <ClInclude Include="..\Classes\COMMON\MgrEquip.h" />
+    <ClInclude Include="..\Classes\COMMON\MgrItem.h" />
+    <ClInclude Include="..\Classes\COMMON\MgrSetting.h" />
+    <ClInclude Include="..\Classes\COMMON\MgrSkill.h" />
+    <ClInclude Include="..\Classes\COMMON\MgrState.h" />
+    <ClInclude Include="..\Classes\COMMON\MgrTeleport.h" />
+    <ClInclude Include="..\Classes\COMMON\MultiOutter.h" />
+    <ClInclude Include="..\Classes\COMMON\ScreenCommon.h" />
+    <ClInclude Include="..\Classes\CONTROL\CCLayerCTL.h" />
+    <ClInclude Include="..\Classes\CONTROL\ctlButton.h" />
+    <ClInclude Include="..\Classes\CONTROL\ctlMain.h" />
+    <ClInclude Include="..\Classes\CONTROL\MultiJoystick.h" />
+    <ClInclude Include="..\Classes\CONTROL\MultiJoystickForAndroid.h" />
+    <ClInclude Include="..\Classes\DATA\ArrayList.h" />
+    <ClInclude Include="..\Classes\DATA\ArrayList.hpp" />
+    <ClInclude Include="..\Classes\DATA\GLB\GlbEqipment.h" />
+    <ClInclude Include="..\Classes\DATA\GLB\GlbEvent.h" />
+    <ClInclude Include="..\Classes\DATA\GLB\GlbMoveRoute.h" />
+    <ClInclude Include="..\Classes\DATA\GLB\GlbMusic.h" />
+    <ClInclude Include="..\Classes\DATA\GLB\GlbSkillLearning.h" />
+    <ClInclude Include="..\Classes\DATA\GLB\GlbSound.h" />
+    <ClInclude Include="..\Classes\DATA\GLB\GlbTestBattler.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbAni.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbAniCell.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbAniFrame.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbAniTiming.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbAttribute.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbBattleAniData.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbBattleCmd.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbBattlerAni.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbBattlerAniExt.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbCharacter.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbCharacterParameter.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbChipset.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbCommonEvent.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbCondition.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbEnemy.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbEnemyAction.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbEnemyGroup.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbEnemyGroupEventCondition.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbEnemyGroupEventPage.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbEnemyGroupMember.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbItem.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbJob.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbMain.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbMainSimple.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbSkill.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbSwitch.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbSystem.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbSystemSimple.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbTerrain.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbVariable.h" />
+    <ClInclude Include="..\Classes\DATA\LDB\LdbVoca.h" />
+    <ClInclude Include="..\Classes\DATA\LMT\LmtEnemysInfo.h" />
+    <ClInclude Include="..\Classes\DATA\LMT\LmtMain.h" />
+    <ClInclude Include="..\Classes\DATA\LMT\LmtMapInfo.h" />
+    <ClInclude Include="..\Classes\DATA\LMT\LmtMapsInfo.h" />
+    <ClInclude Include="..\Classes\DATA\LMT\LmtMgr.h" />
+    <ClInclude Include="..\Classes\DATA\LMU\LmuEvent.h" />
+    <ClInclude Include="..\Classes\DATA\LMU\LmuEventPage.h" />
+    <ClInclude Include="..\Classes\DATA\LMU\LmuEventTrigger.h" />
+    <ClInclude Include="..\Classes\DATA\LMU\LmuMain.h" />
+    <ClInclude Include="..\Classes\DATA\LSDCHK\LsdChk.h" />
+    <ClInclude Include="..\Classes\DATA\LSD\LsdBuffer.h" />
+    <ClInclude Include="..\Classes\DATA\LSD\LsdCharacter.h" />
+    <ClInclude Include="..\Classes\DATA\LSD\LsdCommonEvent.h" />
+    <ClInclude Include="..\Classes\DATA\LSD\LsdLocationHero.h" />
+    <ClInclude Include="..\Classes\DATA\LSD\LsdLocationRide.h" />
+    <ClInclude Include="..\Classes\DATA\LSD\LsdMain.h" />
+    <ClInclude Include="..\Classes\DATA\LSD\LsdMap.h" />
+    <ClInclude Include="..\Classes\DATA\LSD\LsdMapEvent.h" />
+    <ClInclude Include="..\Classes\DATA\LSD\LsdMapEventData.h" />
+    <ClInclude Include="..\Classes\DATA\LSD\LsdMapEventStack.h" />
+    <ClInclude Include="..\Classes\DATA\LSD\LsdObjectCommon.h" />
+    <ClInclude Include="..\Classes\DATA\LSD\LsdOldLoader.h" />
+    <ClInclude Include="..\Classes\DATA\LSD\LsdPicture.h" />
+    <ClInclude Include="..\Classes\DATA\LSD\LsdPreview.h" />
+    <ClInclude Include="..\Classes\DATA\LSD\LsdScreen.h" />
+    <ClInclude Include="..\Classes\DATA\LSD\LsdState.h" />
+    <ClInclude Include="..\Classes\DATA\LSD\LsdSystem.h" />
+    <ClInclude Include="..\Classes\DATA\LSD\LsdTeleport.h" />
+    <ClInclude Include="..\Classes\DATA\LSD\StructControler.h" />
+    <ClInclude Include="..\Classes\DATA\StrConv.h" />
+    <ClInclude Include="..\Classes\DATA\StructDefine.h" />
+    <ClInclude Include="..\Classes\DATA\StructDefine.hpp" />
+    <ClInclude Include="..\Classes\DATA\StructLoader.h" />
+    <ClInclude Include="..\Classes\DATA\SysTime.h" />
+    <ClInclude Include="..\Classes\DATA\TString.h" />
+    <ClInclude Include="..\Classes\DATA\TThread.h" />
+    <ClInclude Include="..\Classes\EVENT\EvtCodes.h" />
+    <ClInclude Include="..\Classes\EVENT\EvtMain.h" />
+    <ClInclude Include="..\Classes\FILEIO\ConvWAV.h" />
+    <ClInclude Include="..\Classes\FILEIO\FileCTL.h" />
+    <ClInclude Include="..\Classes\FILEIO\FileType.h" />
+    <ClInclude Include="..\Classes\FILEIO\GraphicIO.h" />
+    <ClInclude Include="..\Classes\FILEIO\InfoFile.h" />
+    <ClInclude Include="..\Classes\FILEIO\lib_json\autolink.h" />
+    <ClInclude Include="..\Classes\FILEIO\lib_json\config.h" />
+    <ClInclude Include="..\Classes\FILEIO\lib_json\features.h" />
+    <ClInclude Include="..\Classes\FILEIO\lib_json\forwards.h" />
+    <ClInclude Include="..\Classes\FILEIO\lib_json\json.h" />
+    <ClInclude Include="..\Classes\FILEIO\lib_json\json_batchallocator.h" />
+    <ClInclude Include="..\Classes\FILEIO\lib_json\reader.h" />
+    <ClInclude Include="..\Classes\FILEIO\lib_json\value.h" />
+    <ClInclude Include="..\Classes\FILEIO\lib_json\writer.h" />
+    <ClInclude Include="..\Classes\FILEIO\md5\md5.h" />
+    <ClInclude Include="..\Classes\FILEIO\TFolder.h" />
+    <ClInclude Include="..\Classes\FILEIO\TSecure.h" />
+    <ClInclude Include="..\Classes\FILEIO\UnzipCTL.h" />
+    <ClInclude Include="..\Classes\FILEIO\UnzipFolder.h" />
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\crc32.h" />
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\deflate.h" />
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\inffast.h" />
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\inffixed.h" />
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\inflate.h" />
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\inftrees.h" />
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\trees.h" />
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\zconf.h" />
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\zconf.in.h" />
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\zlib.h" />
+    <ClInclude Include="..\Classes\FILEIO\zlib_1.2.3\zutil.h" />
+    <ClInclude Include="..\Classes\GameMain.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\GrpAniMap.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\GrpAniBat.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\GrpAniNode.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\GrpAniOne.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\GrpComTimer.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\GrpFont.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\GrpFontL.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\GrpFontNode.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\GrpMenu.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\GrpPicture.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\GrpPictureNode.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\GrpRTP.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\GrpRTPNode.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\GrpRTPUser.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\GrpShaderColor.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\GrpShaderFont.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\GrpTimer.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\ImageBuffer.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\ImageType.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpBatDam.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpBatNum.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpFace.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpGaze.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpHandDown.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpHandLeft.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpMsgbox.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpNumber.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpSelection.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpSysDown.h" />
+    <ClInclude Include="..\Classes\GRAPHIC\OBJECT\GrpSysUp.h" />
+    <ClInclude Include="..\Classes\MENU\MenuMain.h" />
+    <ClInclude Include="..\Classes\NETWORK\Base64Helper.h" />
+    <ClInclude Include="..\Classes\NETWORK\NetMain.h" />
+    <ClInclude Include="..\Classes\SCENE\APPJOY\ScrAppJoy.h" />
+    <ClInclude Include="..\Classes\SCENE\APPMAIN\ScrAppMain.h" />
+    <ClInclude Include="..\Classes\SCENE\APPMAIN\ScrAppMainGameNode.h" />
+    <ClInclude Include="..\Classes\SCENE\APPMAIN\ScrAppMainListNode.h" />
+    <ClInclude Include="..\Classes\SCENE\AppScaleTools.h" />
+    <ClInclude Include="..\Classes\SCENE\APPVKEY\ScrAppVKey.h" />
+    <ClInclude Include="..\Classes\SCENE\APPVKEY\ScrAppVKeyNode.h" />
+    <ClInclude Include="..\Classes\SCENE\APPVKEY\ScrAppVKeyOK.h" />
+    <ClInclude Include="..\Classes\SCENE\APPVKEY\ScrAppVKeyStore.h" />
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattle0.h" />
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattle0ActionQueue.h" />
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattle0EnemyNode.h" />
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattle3ActionQueue.h" />
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattle3EnemyNode.h" />
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattle3HeroNode.h" />
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattle3WeaponNode.h" />
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattleBgInfo.h" />
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattleHueManager.h" />
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattleBattlerManager.h" />
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattleEffectValues.h" />
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattleStateManager.h" />
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattleType.h" />
+    <ClInclude Include="..\Classes\SCENE\BATTLE\ScrBattle3.h" />
+    <ClInclude Include="..\Classes\SCENE\GAMEOVER\ScrGameover.h" />
+    <ClInclude Include="..\Classes\SCENE\MAP\ScrMap.h" />
+    <ClInclude Include="..\Classes\SCENE\MAP\ScrMapChipsetTile.h" />
+    <ClInclude Include="..\Classes\SCENE\MAP\ScrMapEventNode.h" />
+    <ClInclude Include="..\Classes\SCENE\MAP\ScrMapPublic.h" />
+    <ClInclude Include="..\Classes\SCENE\MENU\ScrMenu.h" />
+    <ClInclude Include="..\Classes\SCENE\MENU\ScrMenuEquip.h" />
+    <ClInclude Include="..\Classes\SCENE\MENU\ScrMenuItem.h" />
+    <ClInclude Include="..\Classes\SCENE\MENU\ScrMenuOrder.h" />
+    <ClInclude Include="..\Classes\SCENE\MENU\ScrMenuQuit.h" />
+    <ClInclude Include="..\Classes\SCENE\MENU\ScrMenuSkill.h" />
+    <ClInclude Include="..\Classes\SCENE\MENU\ScrMenuState.h" />
+    <ClInclude Include="..\Classes\SCENE\MENU\ScrMenuTeleport.h" />
+    <ClInclude Include="..\Classes\SCENE\MENU\ScrMenuUse.h" />
+    <ClInclude Include="..\Classes\SCENE\NAMEINPUT\ScrNameInput.h" />
+    <ClInclude Include="..\Classes\SCENE\SAVE\ScrSave.h" />
+    <ClInclude Include="..\Classes\SCENE\ScreenLayer.h" />
+    <ClInclude Include="..\Classes\SCENE\ScreenLayerManager.h" />
+    <ClInclude Include="..\Classes\SCENE\SHOP\ScrShop.h" />
+    <ClInclude Include="..\Classes\SCENE\TITLE\ScrTitle.h" />
+    <ClInclude Include="..\Classes\SOUND\SndMain.h" />
+    <ClInclude Include="..\Classes\ChocoPlayerInfo.h" />
+    <ClInclude Include="..\Classes\TRANSLATE\TranslateMain.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cocos2d-x-2.2.4\cocos2dx\proj.win32\cocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+      <Private>true</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d-x-2.2.4\CocosDenshion\proj.win32\CocosDenshion.vcxproj">
+      <Project>{f8edd7fa-9a51-4e80-baeb-860825d2eac6}</Project>
+      <Private>true</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d-x-2.2.4\extensions\proj.win32\libExtensions.vcxproj">
+      <Project>{21b2c324-891f-48ea-ad1a-5ae13de12e28}</Project>
+      <Private>true</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Classes\COMMON\MultiOutter.mm" />
+    <None Include="..\Classes\FILEIO\lib_json\json_internalarray.inl" />
+    <None Include="..\Classes\FILEIO\lib_json\json_internalmap.inl" />
+    <None Include="..\Classes\FILEIO\lib_json\json_valueiterator.inl" />
+    <None Include="..\Classes\FILEIO\lib_json\sconscript" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+    	android:orientation="vertical" >
+	    <TextView
+	        android:id="@+id/tv_feedback_email"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/Feedback_Email"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="#222222" />
+	
+	    <EditText
+	        android:id="@+id/et_feedback_email"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="textEmailAddress" />
+	
+	    <TextView
+	        android:id="@+id/tv_feedback_detail"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/Feedback_Detail"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="#222222" />
+	
+	    <EditText
+	        android:id="@+id/et_feedback_detail"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:ems="10"
+	        android:gravity="left|top"
+	        android:inputType="textEmailAddress" >
+	
+	        <requestFocus />
+	    </EditText>
+    </LinearLayout>
+
+	<RelativeLayout
+	    android:id="@+id/rl_feedback_process"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#BB000000"
+	    android:orientation="vertical" >
+
+		<ProgressBar
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true" />
+
+	</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CPDownloadViewController">
+            <connections>
+                <outlet property="btnCancel" destination="gKZ-M5-OZO" id="FE4-I4-pbj"/>
+                <outlet property="lbFileName" destination="CnA-LY-NOW" id="7z7-HU-HNM"/>
+                <outlet property="lbSpeed" destination="UwK-t3-hvR" id="td8-ZQ-jMj"/>
+                <outlet property="lbState" destination="1a4-hv-SKA" id="zA5-aV-GoJ"/>
+                <outlet property="pvDownlaod" destination="a09-Ey-Wxx" id="66G-Q6-wAy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="FIle Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnA-LY-NOW">
+                    <rect key="frame" x="20" y="98" width="280" height="36"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="a09-Ey-Wxx">
+                    <rect key="frame" x="20" y="232" width="280" height="2"/>
+                </progressView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="20Mb/s" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwK-t3-hvR">
+                    <rect key="frame" x="20" y="242" width="280" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="1a4-hv-SKA">
+                    <rect key="frame" x="20" y="191" width="280" height="43"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Automatic Start Download" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f35-y2-PzJ">
+                    <rect key="frame" x="20" y="147" width="217" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZH2-Ol-xvL">
+                    <rect key="frame" x="251" y="142" width="51" height="31"/>
+                </switch>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKZ-M5-OZO">
+                    <rect key="frame" x="116" y="262" width="88" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="88" id="pfD-cs-H0k"/>
+                    </constraints>
+                    <state key="normal" title="Cancel">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onCancel:" destination="-1" eventType="touchUpInside" id="5yy-ci-zgz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="f35-y2-PzJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="2vO-x7-nc5"/>
+                <constraint firstAttribute="trailing" secondItem="UwK-t3-hvR" secondAttribute="trailing" constant="20" id="7eG-ZB-W2c"/>
+                <constraint firstItem="UwK-t3-hvR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="BHA-u4-XL4"/>
+                <constraint firstAttribute="trailing" secondItem="gKZ-M5-OZO" secondAttribute="trailing" constant="116" id="Cne-Os-DdK"/>
+                <constraint firstItem="gKZ-M5-OZO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="116" id="I4m-36-0HX"/>
+                <constraint firstAttribute="trailing" secondItem="1a4-hv-SKA" secondAttribute="trailing" constant="20" id="Pbx-km-dum"/>
+                <constraint firstItem="a09-Ey-Wxx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="VMV-mH-ILs"/>
+                <constraint firstAttribute="trailing" secondItem="CnA-LY-NOW" secondAttribute="trailing" constant="20" id="cuv-bg-b1k"/>
+                <constraint firstItem="1a4-hv-SKA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="dWI-Zr-9Lw"/>
+                <constraint firstAttribute="trailing" secondItem="a09-Ey-Wxx" secondAttribute="trailing" constant="20" id="jPC-s8-DL1"/>
+                <constraint firstItem="ZH2-Ol-xvL" firstAttribute="leading" secondItem="f35-y2-PzJ" secondAttribute="trailing" constant="14" id="kTt-0g-ab1"/>
+                <constraint firstAttribute="trailing" secondItem="ZH2-Ol-xvL" secondAttribute="trailing" constant="20" id="sYP-KR-dND"/>
+                <constraint firstItem="CnA-LY-NOW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="w2b-E8-zCM"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
