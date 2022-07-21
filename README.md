@@ -10,7 +10,7 @@ Simulator app for simulate pc games that created with enterbrain's Rpg maker 200
 
 # Related urls
 * [Homepage](https://sites.google.com/site/sweetierchocoplayer/navi/download)
-* [NamuWiki (Korean)](https://namu.wiki/w/%EC%B4%88%EC%BD%94%20%ED%94%8C%EB%A0%88%EC%9D%B4%EC%96%B4)* [Namu WIKI](https://namu.wiki/w/%EC%B4%88%EC%BD%94%20%ED%94%8C%EB%A0%88%EC%9D%B4%EC%96%B4)
+* [NamuWiki (Korean)](https://namu.wiki/w/%EC%B4%88%EC%BD%94%20%ED%94%8C%EB%A0%88%EC%9D%B4%EC%96%B4)
 * [Development story article (Korean)](https://medium.com/@ronpark.dev/20%EB%A7%8C%EB%B2%88-%EB%8B%A4%EC%9A%B4%EB%B0%9B%EC%9D%80-%EA%B2%8C%EC%9E%84%EC%9D%84-%ED%98%BC%EC%9E%90-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EB%8B%A4-cf1e6c6f231b)
 
 # Used Environment & Libraries
