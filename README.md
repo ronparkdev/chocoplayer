@@ -5,7 +5,7 @@
 
 Simulator app for simulate pc games that created with enterbrain's Rpg maker 2000 &amp; 2003 tool
 
-* Maintenance has been suspended at 2006 and removed from playstore
+* Maintenance has been suspended at 2016 and removed from playstore
 * but, you can download apk from [here](https://github.com/ronpark-dev/chocoplayer/raw/main/releases/109.apk)
 
 ## Related urls
