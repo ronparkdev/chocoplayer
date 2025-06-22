@@ -1,0 +1,40 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.0'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+// Global properties can be defined here and accessed in subprojects
+ext {
+    // These should align with your project needs and Cocos2d-x 3.17.2 compatibility
+    // Consult a fresh Cocos2d-x 3.17.2 project for typical versions.
+    // For example:
+    // androidCompileSdkVersion = 30
+    // androidBuildToolsVersion = "30.0.3"
+    // androidMinSdkVersion = 16
+    // androidTargetSdkVersion = 30
+    // androidNdkVersion = "21.4.7075529" // Example NDK version
+
+    // Application specific versions from AndroidManifest
+    // These can be centralized here and used in app/build.gradle
+    // PROP_APP_ID = "com.sweetier.mrpg2kplayer"
+    // PROP_APP_VERSION_CODE = 107
+    // PROP_APP_VERSION_NAME = "4.1.1"
+}

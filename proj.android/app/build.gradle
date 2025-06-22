@@ -1,0 +1,92 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.sweetier.mrpg2kplayer"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 107
+        versionName "4.1.1"
+
+        externalNativeBuild {
+            ndkBuild {
+                arguments "NDK_TOOLCHAIN_VERSION:=clang"
+                arguments "APP_PLATFORM:=android-16"
+                arguments "APP_STL:=c++_static"
+                // arguments "NDK_DEBUG:=1" // Uncomment for debug builds
+                targets "cocos2dcpp_shared"
+            }
+        }
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86'
+        }
+    }
+
+    sourceSets.main {
+        java.srcDirs = ["src"]
+        res.srcDirs = ["res"]
+        assets.srcDirs = ["assets", "../../../../Resources"]
+        manifest.srcFile "AndroidManifest.xml"
+        jniLibs.srcDirs = ['libs']
+    }
+
+    externalNativeBuild {
+        ndkBuild {
+            path "jni/Android.mk"
+        }
+    }
+
+    signingConfigs {
+        release {
+            // Configure your release signing key here
+            // Example:
+            // storeFile file("../../../your_release_key.jks") // Path relative to this build.gradle
+            // storePassword System.getenv("KEYSTORE_PASSWORD")
+            // keyAlias System.getenv("KEY_ALIAS")
+            // keyPassword System.getenv("KEY_PASSWORD")
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // signingConfig signingConfigs.release
+        }
+        debug {
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+            jniDebuggable true // Enable NDK debugging for debug builds
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packagingOptions {
+        // Fixes for duplicate file issues that can arise with native libraries
+        pickFirst 'lib/armeabi-v7a/libc++_shared.so'
+        pickFirst 'lib/arm64-v8a/libc++_shared.so'
+        pickFirst 'lib/x86/libc++_shared.so'
+        pickFirst 'lib/x86_64/libc++_shared.so'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    implementation project(':libcocos2dx')
+
+    // Example: Modern Google Play Services dependencies (replace with actual versions)
+    // implementation 'com.google.android.gms:play-services-ads:21.0.0'
+    // implementation 'com.android.billingclient:billing:5.0.0'
+
+    // For libs_android/dropbox_api and libs_android/google_library:
+    // If they are JARs, place them in proj.android/app/libs and they will be picked up by fileTree.
+    // If they are AARs, place them in proj.android/app/libs and they will be picked up by fileTree.
+    // If they were source library projects, they need to be converted to Gradle modules
+    // or their functionality replaced. For now, assuming they might be JARs/AARs in 'app/libs'.
+}
